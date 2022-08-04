@@ -1,0 +1,9 @@
+.container_child_container {
+  background-color: grey;
+  padding: 20px;
+  margin-left: 74px;
+  transition: margin-left 0.3s ease-in-out;
+  &.container_child_container_expand {
+    margin-left: 250px;
+  }
+}

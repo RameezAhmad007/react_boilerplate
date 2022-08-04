@@ -1,0 +1,16 @@
+.side_menu_container {
+  position: absolute;
+  top: 0;
+  width: 74px;
+  height: inherit;
+  background-color: #343a40;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+  transition: margin-left 0.3s ease-in-out, width 0.3s ease-in-out;
+  &.side_menu_container_expand {
+    width: 250px;
+  }
+  &:hover {
+    width: 250px;
+  }
+}
