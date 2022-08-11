@@ -11,7 +11,8 @@ function SideMenu(props) {
     <aside
       className={`side_menu_container ${
         expandMenu ? "side_menu_container_expand" : ""
-      }`}>
+      }`}
+    >
       <Link to="/" className="side_menu_top_container">
         <div className="side_menu_top_inner_container">
           <div className="side_menu_logo_container">
@@ -20,7 +21,8 @@ function SideMenu(props) {
           <span
             className={`side_menu_top_company_name ${
               expandMenu ? "" : "side_menu_top_company_name_collapse"
-            }`}>
+            }`}
+          >
             CARRYME
           </span>
         </div>

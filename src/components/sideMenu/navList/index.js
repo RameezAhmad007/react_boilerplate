@@ -24,12 +24,14 @@ function NavList(props) {
             if (e.key.toLowerCase() === "enter") {
               setExpandDropdown(!expandDropdown);
             }
-          }}>
+          }}
+        >
           <FaThList className="nav_list_icon" />
           <div
             className={`nav_list_title_container ${
               expandMenu ? "" : "nav_list_title_container_collapse"
-            }`}>
+            }`}
+          >
             <span className="nav_list_title">Orders</span>
             <FaChevronLeft
               className={`nav_list_arrow ${
@@ -41,13 +43,15 @@ function NavList(props) {
         <div
           className={`nav_list_container ${
             expandDropdown ? "" : "nav_list_container_collapse"
-          }`}>
+          }`}
+        >
           <NavLink to="neworder" className="nav_list_chunk">
             <ImRadioUnchecked className="nav_link_chunk_icon" />
             <span
               className={`nav_list_chunk_title ${
                 expandMenu ? "" : "nav_list_chunk_title_collapse"
-              }`}>
+              }`}
+            >
               New Order
             </span>
           </NavLink>
@@ -56,7 +60,8 @@ function NavList(props) {
             <span
               className={`nav_list_chunk_title ${
                 expandMenu ? "" : "nav_list_chunk_title_collapse"
-              }`}>
+              }`}
+            >
               Active Order
             </span>
           </NavLink>
@@ -65,7 +70,8 @@ function NavList(props) {
             <span
               className={`nav_list_chunk_title ${
                 expandMenu ? "" : "nav_list_chunk_title_collapse"
-              }`}>
+              }`}
+            >
               Delivered Order
             </span>
           </NavLink>
@@ -74,7 +80,8 @@ function NavList(props) {
             <span
               className={`nav_list_chunk_title ${
                 expandMenu ? "" : "nav_list_chunk_title_collapse"
-              }`}>
+              }`}
+            >
               Cancel Order
             </span>
           </NavLink>
@@ -85,7 +92,8 @@ function NavList(props) {
         <span
           className={`nav_link_title ${
             expandMenu ? "" : "nav_link_title_collapse"
-          }`}>
+          }`}
+        >
           Chat
         </span>
       </NavLink>
