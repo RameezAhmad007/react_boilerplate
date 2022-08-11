@@ -1,8 +1,10 @@
 .header_container {
-  background-color: gold;
-  padding: 20px;
+  background-color: #fff;
+  padding: 14px 20px;
   margin-left: 74px;
   transition: margin-left 0.3s ease-in-out;
+  border-bottom: 1px solid #dee2e6;
+  height: 54px;
   &.header_container_expand {
     margin-left: 250px;
   }

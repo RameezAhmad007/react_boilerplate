@@ -12,5 +12,92 @@
   }
   &:hover {
     width: 250px;
+    .side_menu_top_container
+      .side_menu_top_inner_container
+      .side_menu_top_company_name_collapse,
+    .side_menu_bottom_container
+      .nav_list_dropdown
+      .nav_list_header
+      .nav_list_title_container_collapse,
+    .side_menu_bottom_container
+      .nav_list_dropdown
+      .nav_list_container
+      .nav_list_chunk
+      .nav_list_chunk_title_collapse,
+    .side_menu_bottom_container .nav_link .nav_link_title_collapse {
+      margin-left: unset;
+      visibility: unset;
+      -webkit-animation-name: unset;
+      animation-name: unset;
+      -webkit-animation-duration: unset;
+      animation-duration: unset;
+      -webkit-animation-fill-mode: unset;
+      animation-fill-mode: unset;
+    }
+  }
+  .side_menu_top_container {
+    width: 100%;
+    transition: width 0.3s ease-in-out;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    .side_menu_top_inner_container {
+      padding: 10px 20px;
+      // background-color: gold;
+      border-bottom: 1px solid #4b545c;
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      height: 54px;
+      .side_menu_logo_container {
+        height: 33px;
+        width: 33px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+          0 6px 6px rgba(0, 0, 0, 0.23);
+        margin-right: 10px;
+        border: 1px solid #fff;
+        .side_menu_logo {
+          height: 33px;
+          width: 33px;
+          object-fit: cover;
+        }
+      }
+      .side_menu_top_company_name {
+        transition: margin-left 0.3s linear, opacity 0.3s ease,
+          visibility 0.3s ease;
+      }
+      .side_menu_top_company_name_collapse {
+        margin-left: -10px;
+        -webkit-animation-name: fadeOut;
+        animation-name: fadeOut;
+        -webkit-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        visibility: hidden;
+      }
+      @keyframes fadeOut {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      &:hover {
+        .side_menu_top_company_name {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .side_menu_bottom_container {
+    // background-color: gold;
+    padding: 10px;
   }
 }
